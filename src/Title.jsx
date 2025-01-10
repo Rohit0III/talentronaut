@@ -43,7 +43,7 @@ function Title() {
                 initial="hidden"
                 animate={controls}
                 variants={animationVariants}
-                className="text-center mx-auto"
+                className="text-center mx-auto max-w-max min-w-full"
             >
                 {/* Lazy-Loaded Responsive Image */}
                 <img
