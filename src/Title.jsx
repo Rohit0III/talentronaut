@@ -36,7 +36,7 @@ function Title() {
     }, [inView, controls]);
 
     return (
-        <div className="flex justify-center items-center my-2 px-4">
+        <div className="flex justify-center  items-center my-2 px-4">
             {/* Animated Title Container */}
             <motion.div
                 ref={ref}
@@ -51,11 +51,11 @@ function Title() {
                     alt="Title"
                     loading="lazy" // Lazy load for better performance
                     className="hidden md:block w-full h-auto mx-auto"
-                />
+                /> 
 
-                {/* Fallback Text for SEO or Accessibility */}
-                <h1 className="md:hidden text-4xl font-serif text-gray-900">
-                    Your Personal <br /> Time Machine
+                {/* {/* Fallback Text for SEO or Accessibility */}
+                <h1 className=" text-4xl font-serif lg:hidden text-gray-900">
+                    Your Personal  Time Machine
                 </h1>
             </motion.div>
         </div>

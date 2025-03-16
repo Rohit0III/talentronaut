@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import React from 'react';
 import { FaBoltLightning } from "react-icons/fa6";
 
+
 const HeroSection = () => {
     const animationVariants = {
         hidden: {
@@ -38,10 +39,8 @@ const HeroSection = () => {
 
     return (
         <div
-            className="relative lg:h-[95vh] h-[75vh] bg-cover bg-center rounded-[2.5rem] m-2 flex flex-col"
-            style={{
-                backgroundImage: "url('https://cdn.prod.website-files.com/66a316c9b5b625f7454f779e/66a4213e416551852c7656ed_mindpalace-hero.webp')",
-            }}
+            className="relative lg:h-[95vh] h-[75vh] max-sm:h-[60%] bg-cover bg-center rounded-[2.5rem] m-2 flex flex-col"
+            style={{ backgroundImage: "url('/hero-bg.jpg')" }}
         >
             {/* Overlay to darken background for better contrast */}
             <div className="absolute inset-0 bg-black bg-opacity-5 rounded-[2.5rem] z-0"></div>
@@ -49,9 +48,9 @@ const HeroSection = () => {
             {/* Logo at Top */}
             <div className="absolute top-6 left-6 hidden lg:block z-10">
                 <img
-                    src="https://cdn.prod.website-files.com/66a316c9b5b625f7454f779e/66a42197f7d4f567092a4dd6_mindpalace-logo-symbol.svg"
-                    alt="MindPalace Logo"
-                    className="rounded-full w-24 h-24"
+                    src="/logo-talentronaut.png"
+                    alt="Talentronaut Logo"
+                    className="rounded-full w-24 h-20"
                 />
             </div>
 
@@ -81,16 +80,16 @@ const HeroSection = () => {
                         memory and predictive capabilities.
                     </p>
                     <div className="flex border items-center border-gray-600 rounded-2xl px-3 w-full">
-                        <div className="w-3 h-3 bg-orange-1000 rounded-full me-4" />
+                        <div className="w-3 h-3 bg-purple-900 rounded-full me-4" />
                         <input
                             type="email"
                             placeholder="Enter Your Email_"
-                            className="py-2 md:py-3 text-white placeholder-white text-xl lg:text-2xl font-serif bg-transparent focus:outline-none w-full"
+                            className="py-2 md:py-3 text-white placeholder-purple-900 text-xl lg:text-2xl font-serif bg-transparent focus:outline-none w-full"
                         />
                     </div>
                     {/* Button */}
-                    <button className="flex items-center text-sm lg:text-lg bg-orange-1000 text-black font-extrabold justify-center py-4 rounded-full hover:bg-orange-600 w-full lg:w-52">
-                        <span className="transform scale-y-75">HOP IN</span>
+                    <button className="flex items-center text-sm lg:text-lg bg-purple-900 text-White font-extrabold justify-center py-4 rounded-full hover:bg-orange-600 w-full lg:w-52">
+                        <span className="transform text-white scale-y-75">HOP IN</span>
                         <FaBoltLightning className="ms-2" />
                     </button>
                 </div>
@@ -99,17 +98,16 @@ const HeroSection = () => {
             {/* Footer Logo */}
 
             <motion.div
-                ref={ref}
-                initial="hidden"
-                animate={controls}
-                variants={animationVariants}
-                className="absolute bottom-6 md:bottom-4 w-full flex justify-center mx-2 z-10">
-                <img
-                    className="w-[80%] md:w-[95%]"
-                    src="https://cdn.prod.website-files.com/66a316c9b5b625f7454f779e/66a42197cc9c2c121112a75c_mindpalace-logo-wordmark.svg"
-                    alt="MindPalace Wordmark"
-                />
-            </motion.div>
+    ref={ref}
+    initial="hidden"
+    animate={controls}
+    variants={animationVariants}
+    className="absolute bottom-6 md:bottom-4 w-full text-center z-10"
+>
+    <h1 className="text-orange-600 font-extrabold max-sm:text-5xl text-9xl md:text-8xl lg:text-[156px] tracking-wide">
+        TALENTRONAUT
+    </h1>
+</motion.div>
         </div >
     );
 };

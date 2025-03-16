@@ -79,11 +79,10 @@ const Section = () => {
                     className="absolute top-0"
                 >
                     <h2 className="text-5xl md:text-8xl text-gray-800 font-semibold">
-                        See into Your Past
+                        Our Services
                     </h2>
                     <p className="mt-4 text-md md:text-lg">
-                        Instantly bring up past conversations and memories with friends, family, and colleagues,
-                        making it easy to continue where you left off.
+                    Talentronaut Technology offers innovative platforms designed to connect businesses with emerging talent and provide advanced training and research opportunities.
                     </p>
                 </motion.div>
 
@@ -105,10 +104,10 @@ const Section = () => {
                     >
                         <h3 className="text-md font-bold text-black flex items-center">
                             <span className="w-2 h-2 bg-red-500 rounded-full inline-block mr-2"></span>
-                            Effortlessly Access Notes
+                            LinksUs
                         </h3>
                         <p className="text-sm mt-2">
-                            Quickly grab your notes and to-dos without digging through multiple apps.
+                        Connecting companies with emerging talent for practical industry experience
                         </p>
                     </motion.div>
 
@@ -122,10 +121,10 @@ const Section = () => {
                     >
                         <h3 className="text-md font-bold text-black flex items-center">
                             <span className="w-2 h-2 bg-red-500 rounded-full inline-block mr-2"></span>
-                            Gather Information Fast
+                            Skill Techies
                         </h3>
                         <p className="text-sm mt-2">
-                            Keep all your project-related info together so you can find it easily when you need it.
+                        Providing training, internships, and hands-on projects for skill development.
                         </p>
                     </motion.div>
 
